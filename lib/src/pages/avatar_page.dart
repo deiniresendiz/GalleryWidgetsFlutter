@@ -6,6 +6,15 @@ class AvatarPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text('Avatar Page'),
+        actions: <Widget>[
+          Container(
+            margin: EdgeInsets.only(right: 10.0),
+            child: CircleAvatar(
+              child: Text('sl'),
+              backgroundColor: Colors.red,
+            ),
+          ),
+        ],
       ),
     );
   }
